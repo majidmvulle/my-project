@@ -5,5 +5,14 @@
   "main": "index.js",
   "repository": "git@github.com:majidmvulle/my-project.git",
   "author": "majidmvulle <majid@majidmvulle.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.22.4"
+  },
+  "scripts": {
+    "dev-server": "encore dev-server",
+    "dev": "./node_modules/@symfony/webpack-encore/bin/encore.js dev",
+    "watch": "./node_modules/@symfony/webpack-encore/bin/encore.js dev --watch",
+    "build": "./node_modules/@symfony/webpack-encore/bin/encore.js production --progress"
+  }
 }
